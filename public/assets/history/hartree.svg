@@ -1,0 +1,50 @@
+<svg id="Component_447_7" data-name="Component 447 – 7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="233.338" height="71.649" viewBox="0 0 233.338 71.649">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_8542" data-name="Path 8542" d="M104,168h4v45.871h-4Zm0,0" fill="#4ad991"/>
+    </clipPath>
+  </defs>
+  <g id="Component_445_10" data-name="Component 445 – 10">
+    <g id="Group_3161" data-name="Group 3161" transform="translate(-71.179 -142.222)" clip-path="url(#clip-path)">
+      <path id="Path_8541" data-name="Path 8541" d="M78.768-82.563v41.707" transform="translate(27.199 253.054)" fill="none" stroke="#4ad991" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3.022"/>
+    </g>
+    <path id="Path_8543" data-name="Path 8543" d="M127.582,164.152c-5.414-.34-13.906,5.977-18.527,9.809,4.016-4.445,10.711-12.691,10.566-18.105a14.059,14.059,0,0,0-28.109.723c.137,5.266,6.875,12.875,11.145,17.188-4.672-3.848-12.969-9.945-18.293-9.613a13.993,13.993,0,1,0,1.766,27.93c7.188-.449,18.27-13.2,19.844-15.051,1.574,1.855,12.66,14.6,19.848,15.051a13.993,13.993,0,1,0,1.762-27.93" transform="translate(-71.179 -142.222)" fill="#4ad991"/>
+  </g>
+  <g id="Component_446_3" data-name="Component 446 – 3" transform="translate(44.838 50.768)">
+    <g id="Group_3163" data-name="Group 3163" transform="translate(-116.017 -192.99)">
+      <g id="Group_3162" data-name="Group 3162" transform="translate(114.642 212.228)">
+        <path id="Path_8544" data-name="Path 8544" d="M4.121-19.238H1.375V0H4.121V-8.246H17.863V0h2.746V-19.238H17.863v8.246H4.121Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3165" data-name="Group 3165" transform="translate(-116.017 -192.99)">
+      <g id="Group_3164" data-name="Group 3164" transform="translate(143.494 212.228)">
+        <path id="Path_8545" data-name="Path 8545" d="M15.113-16.488a2.756,2.756,0,0,1,2.75,2.746v5.5H4.121v-5.5a2.756,2.756,0,0,1,2.75-2.746Zm5.5,2.746a5.6,5.6,0,0,0-5.5-5.5H6.871a5.549,5.549,0,0,0-5.5,5.5V0H4.121V-5.5H17.863V0h2.746Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3167" data-name="Group 3167" transform="translate(-116.017 -192.99)">
+      <g id="Group_3166" data-name="Group 3166" transform="translate(172.346 212.228)">
+        <path id="Path_8546" data-name="Path 8546" d="M17.863-10.992a2.756,2.756,0,0,1-2.75,2.746H4.121v-8.242H15.113a2.756,2.756,0,0,1,2.75,2.746ZM20.609,0V-1.953L16.793-5.77a5.566,5.566,0,0,0,3.816-5.223v-2.75a5.583,5.583,0,0,0-5.5-5.5H1.375V0H4.121V-5.5h9.043L18.66,0Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3169" data-name="Group 3169" transform="translate(-116.017 -192.99)">
+      <g id="Group_3168" data-name="Group 3168" transform="translate(200.924 212.228)">
+        <path id="Path_8547" data-name="Path 8547" d="M19.238-16.488v-2.75H0v2.75H8.246V0h2.746V-16.488Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3171" data-name="Group 3171" transform="translate(-116.017 -192.99)">
+      <g id="Group_3170" data-name="Group 3170" transform="translate(227.028 212.228)">
+        <path id="Path_8548" data-name="Path 8548" d="M17.863-10.992a2.756,2.756,0,0,1-2.75,2.746H4.121v-8.242H15.113a2.756,2.756,0,0,1,2.75,2.746ZM20.609,0V-1.953L16.793-5.77a5.566,5.566,0,0,0,3.816-5.223v-2.75a5.583,5.583,0,0,0-5.5-5.5H1.375V0H4.121V-5.5h9.043L18.66,0Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3173" data-name="Group 3173" transform="translate(-116.017 -192.99)">
+      <g id="Group_3172" data-name="Group 3172" transform="translate(255.605 212.228)">
+        <path id="Path_8549" data-name="Path 8549" d="M4.121-16.488H20.609v-2.75H1.375V0H20.609V-2.75H4.121v-5.5H17.863v-2.746H4.121Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+    <g id="Group_3175" data-name="Group 3175" transform="translate(-116.017 -192.99)">
+      <g id="Group_3174" data-name="Group 3174" transform="translate(283.908 212.228)">
+        <path id="Path_8550" data-name="Path 8550" d="M4.121-16.488H20.609v-2.75H1.375V0H20.609V-2.75H4.121v-5.5H17.863v-2.746H4.121Zm0,0" fill="#4ad991"/>
+      </g>
+    </g>
+  </g>
+</svg>

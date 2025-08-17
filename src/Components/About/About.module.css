@@ -75,9 +75,15 @@
         background-color: transparent;
         padding-left: 0;
         padding-right: 0;
+        margin-top: 0px;
+    }
+
+    .title {
+        font-size: 25px;
     }
 
     .content {
+        margin-top: -10px;
         flex-direction: column;
     }
 
@@ -87,10 +93,20 @@
 
     .aboutItems {
         margin-top: 29px;
+        gap: 0px;
     }
 
     .aboutItem {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .aboutItem h3 {
+        font-size: 20px;
+    }
+
+    .aboutItem p {
+        margin-top: 8px;
+        font-size: 15px;
     }
 }

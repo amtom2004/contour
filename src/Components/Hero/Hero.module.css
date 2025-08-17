@@ -102,11 +102,22 @@
 
 @media screen and (max-width: 830px) {
   .title {
-    font-size: 50px;
+    margin-top: 50px;
+    font-size: 35px;
+  }
+
+  .heroImg {
+    width: 70%;
+    animation-duration: 5s;
   }
 
   .description {
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .contactBtn {
+    padding: 10px 19px;
+    font-size: 20px;
   }
 
   .container {

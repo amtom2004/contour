@@ -1,29 +1,36 @@
 [
-    {
-      "role": "Software Engineer",
-      "organisation": "Google",
-      "startDate": "Sept, 2022",
-      "endDate": "Present",
-      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
-      "imageSrc": "history/google.png"
+  {
+    "role": "Software Development Intern",
+    "organisation": "Hartree",
+    "startDate": "September, 2024",
+    "endDate": "present",
+    "experiences": ["Working on Hartree's Sustainability Management System in Waste Emission Management and Climate Risk Resiliance"],
+    "imageSrc": "history/hartree.jpeg"
+  },
+  {
+      "role": "Research & Development Intern",
+      "organisation": "Sedai",
+      "startDate": "June, 2025",
+      "endDate": "July, 2025",
+      "experiences": ["Worked on project to develop a system to infer standard application types using Kubernetes resource specifications"],
+      "imageSrc": "history/sedai.png"
     },
     {
-      "role": "UI Designer",
-      "organisation": "Mirosoft",
-      "startDate": "Aug, 2021",
-      "endDate": "Aug, 2022",
-      "experiences": ["Worked on Windows 11", "Designed the control panel"],
-      "imageSrc": "history/microsoft.png"
+      "role": "Project Intern",
+      "organisation": "Indian Institute of Space Science & Technology",
+      "startDate": "June, 2025",
+      "endDate": "July, 2025",
+      "experiences": ["Worked on developing a Attention based Deep Learning UNET Model for Road Segmentation from satellite images"],
+      "imageSrc": "history/iist.png"
     },
     {
-      "role": "SWE Intern",
-      "organisation": "Netflix",
-      "startDate": "Apr, 2020",
-      "endDate": "Jun, 2020",
+      "role": "Project Intern",
+      "organisation": "Kerala State Remote Sensing & Environment Centre",
+      "startDate": "July, 2024",
+      "endDate": "May, 2025",
       "experiences": [
-        "Worked on component library",
-        "Helped create UI components"
+        "Develped a Landslide Prediction Model using SAR Displacement Data in Idukki"
       ],
-      "imageSrc": "history/netflix.png"
+      "imageSrc": "history/ksrec.jpg"
     }
   ]

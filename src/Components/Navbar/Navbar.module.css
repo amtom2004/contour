@@ -64,6 +64,9 @@
         -webkit-user-drag: none;
         width: 28px;
         height: 28px;
+        position: absolute;
+        right: -30px;
+        top: 2px;
     }
 
     .menuItems {
@@ -75,7 +78,7 @@
         background: rgb(25, 55, 109);
         background: linear-gradient(
             0deg,
-            rgb(25, 55, 109, 0.2) 0%,
+            rgb(25, 55, 109, 0.5) 0%,
             rgb(25, 55, 109, 1) 100%
         );
         padding: 24px 33px;

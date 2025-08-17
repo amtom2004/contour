@@ -1,26 +1,34 @@
 [
     {
-      "title": "Project A",
+      "title": "Inferring Standard Application Types using Kubernetes Resource Specifications",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a project to build a system that can help cloud optimizations by finding Application type and its deprecated packages",
+      "skills": ["AWS", "Kubernetes", "Docker", "React"],
+      "demo": "https://github.com/dms2004/Sedai-Internship",
+      "source": "https://github.com/dms2004/Sedai-Internship"
     },
     {
-      "title": "Project B",
+      "title": "Road Segmentation from High Definition Satellite Images using Deep Learning",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a project that built a CBAM Attention enabled UNET Model with increased performance of 3.5% comparing conventional models",
+      "skills": ["AWS", "Kubernetes", "Docker", "React"],
+      "demo": "https://github.com/amtom2004/cbam_fsu_roadseg",
+      "source": "https://github.com/amtom2004/cbam_fsu_roadseg"
     },
     {
-      "title": "Project C",
+      "title": "Automated Landslide Prediction System using Interferometry on SAR Data in Idukki",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "description": "This is a project to build a Machine Learning model to predict landslides in Idukki using SAR Displacement Data",
+      "skills": ["ML", "Python", "React", "SNAP"],
+      "demo": "https://github.com/amtom2004/ALPS-Backend-Model-Render",
+      "source": "https://github.com/amtom2004/ALPS-Backend-Model-Render"
+    },
+    {
+      "title": "Wildlife Route Prediction System using Terrain Analysis and Animal Physiological Data",
+      "imageSrc": "projects/project.png",
+      "description": "This is a project Wildlife Route Prediction System using Terrain Analysis and Animal Physiological Data in Real Time",
+      "skills": ["ML", "Python", "Flutter", "Julia", "R"],
+      "demo": "https://github.com/Sudeep-T-Pillai/PHILEO",
+      "source": "https://github.com/Sudeep-T-Pillai/PHILEO"
     }
   ]

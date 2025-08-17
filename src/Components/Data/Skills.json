@@ -1,5 +1,21 @@
 [
     {
+      "title": "C",
+      "imageSrc": "skills/c.png"
+    },
+    {
+      "title": "C++",
+      "imageSrc": "skills/cpp.png"
+    },
+    {
+      "title": "Java",
+      "imageSrc": "skills/java.png"
+    },
+    {
+      "title": "R",
+      "imageSrc": "skills/r.png"
+    },
+    {
       "title": "HTML",
       "imageSrc": "skills/html.png"
     },
@@ -12,19 +28,35 @@
       "imageSrc": "skills/react.png"
     },
     {
-      "title": "Node",
-      "imageSrc": "skills/node.png"
+      "title": "Docker",
+      "imageSrc": "skills/docker.png"
     },
     {
-      "title": "GraphQL",
-      "imageSrc": "skills/graphql.png"
+      "title": "AWS",
+      "imageSrc": "skills/aws.png"
     },
     {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
+      "title": "Kubernetes",
+      "imageSrc": "skills/kubes.png"
+    },
+    {
+      "title": "Spring Boot",
+      "imageSrc": "skills/spring.svg"
+    },
+    {
+      "title": "Django",
+      "imageSrc": "skills/django.png"
+    },
+    {
+      "title": "PostgreSQL",
+      "imageSrc": "skills/postgresql.png"
     },
     {
       "title": "Figma",
       "imageSrc": "skills/figma.png"
+    },
+    {
+      "title": "Photoshop",
+      "imageSrc": "skills/photoshop.png"
     }
   ]
