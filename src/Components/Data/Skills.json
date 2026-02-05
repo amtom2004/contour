@@ -58,5 +58,13 @@
     {
       "title": "Photoshop",
       "imageSrc": "skills/photoshop.png"
+    },
+    {
+      "title": "Databricks",
+      "imageSrc": "skills/databricks.png"
+    },
+    {
+      "title": "Spark",
+      "imageSrc": "skills/spark.png"
     }
   ]
