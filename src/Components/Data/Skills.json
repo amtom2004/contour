@@ -66,5 +66,17 @@
     {
       "title": "Spark",
       "imageSrc": "skills/spark.png"
+    },
+    {
+      "title": "Terraform",
+      "imageSrc": "skills/terraform.webp"
+    },
+    {
+      "title": "Go",
+      "imageSrc": "skills/go.png"
+    },
+    {
+      "title": "Ansible",
+      "imageSrc": "skills/ansible.webp"
     }
   ]

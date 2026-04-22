@@ -70,26 +70,36 @@
 
 @media screen and (max-width: 830px) {
     .container {
-        padding: 5px 11px;
+        padding: 0px;
+        width: 100%;
     }
 
     .image {
-        margin-top: 7px;
-        height: 120px;
-    }
-
-    .title {
-        font-size: 20px;
-    }
-
-    .description {
-        font-size: 15px;
+        margin-top: 10px;
+        height: 140px;
+        width: 280px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
+    .title {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .skills {
         margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+        justify-content: center;
     }
 
     .skill {
@@ -98,12 +108,12 @@
     }
 
     .links {
-        margin-top: 20px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .link {
-        font-size: 18px;
+        font-size: 14px;
         padding: 2px 22px;
     }
 }

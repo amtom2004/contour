@@ -1,15 +1,5 @@
 [
   {
-    "role": "Technical Intern",
-    "organisation": "Armada",
-    "startDate": "February, 2026",
-    "endDate": "present",
-    "experiences": [
-      "Working on Research and Development, Armada"
-    ],
-    "imageSrc": "history/armada.jpeg"
-  },
-  {
     "role": "Software Development Intern",
     "organisation": "Hartree",
     "startDate": "September, 2024",
@@ -18,11 +8,21 @@
     "imageSrc": "history/hartree.jpeg"
   },
   {
+    "role": "Technical Intern",
+    "organisation": "Armada",
+    "startDate": "February, 2026",
+    "endDate": "April 2026",
+    "experiences": [
+      "Worked on Research and Development, Armada specifically on Terraform, Golang, Ansible and Kubernetes"
+    ],
+    "imageSrc": "history/armada.jpeg"
+  },
+  {
       "role": "Research & Development Intern",
       "organisation": "Sedai",
       "startDate": "June, 2025",
-      "endDate": "present",
-      "experiences": ["Worked on project to develop a system to infer standard application types using Kubernetes resource specifications, currently working on Databricks Optimization"],
+      "endDate": "May, 2026",
+      "experiences": ["Worked on project to develop a system to infer standard application types using Kubernetes resource specifications, worked on Databricks Optimization"],
       "imageSrc": "history/sedai.jpeg"
     },
     {
