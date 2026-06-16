@@ -1,9 +1,19 @@
 [
   {
+    "role": "Software Engineer",
+    "organisation": "Armada",
+    "startDate": "May, 2026",
+    "endDate": "present",
+    "experiences": [
+      "Working on R&D of Armada's GPU as a Service (GPUaaS) platform, Bridge"
+    ],
+    "imageSrc": "history/armada.jpeg"
+  },
+  {
     "role": "Software Development Intern",
     "organisation": "Hartree",
     "startDate": "September, 2024",
-    "endDate": "present",
+    "endDate": "June, 2026",
     "experiences": ["Working on Hartree's Sustainability Management System in Waste Emission Management and Climate Risk Resiliance"],
     "imageSrc": "history/hartree.jpeg"
   },
