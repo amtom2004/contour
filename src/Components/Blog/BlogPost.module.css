@@ -1,0 +1,223 @@
+@import '../../vars.css';
+
+/* ── Hero image ────────────────────────────── */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        transparent 40%,
+        var(--color-bg) 100%
+    );
+}
+
+/* ── Article wrapper ───────────────────────── */
+.article {
+    color: var(--color-text);
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 0 24px 100px;
+}
+
+/* ── Back link ─────────────────────────────── */
+.backLink {
+    display: inline-block;
+    margin-top: 36px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: opacity 0.2s;
+}
+
+.backLink:hover {
+    opacity: 0.75;
+}
+
+/* ── Tags ──────────────────────────────────── */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin-top: 28px;
+}
+
+.tag {
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 100px;
+    background: var(--color-dark);
+    padding: 3px 16px;
+    letter-spacing: 0.3px;
+}
+
+/* ── Title ─────────────────────────────────── */
+.title {
+    margin-top: 20px;
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+/* ── Meta ──────────────────────────────────── */
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    font-family: var(--font-roboto);
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.metaDot {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* ── Divider ───────────────────────────────── */
+.divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 36px 0;
+}
+
+/* ── Article body ──────────────────────────── */
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.blockParagraph {
+    font-family: var(--font-roboto);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.8;
+    opacity: 0.9;
+    margin-top: 22px;
+}
+
+.blockHeading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 48px;
+    margin-bottom: -8px;
+}
+
+.blockQuote {
+    margin-top: 32px;
+    padding: 18px 28px;
+    border-left: 4px solid var(--color-primary);
+    background: rgba(87, 108, 188, 0.12);
+    border-radius: 0 8px 8px 0;
+    font-family: var(--font-roboto);
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.65;
+    opacity: 0.95;
+}
+
+.codeWrapper {
+    position: relative;
+    margin-top: 28px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: var(--color-dark);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.codeLang {
+    display: block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    background: rgba(87, 108, 188, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: var(--font-roboto);
+}
+
+.blockCode {
+    padding: 20px 24px;
+    overflow-x: auto;
+    font-size: 14px;
+    line-height: 1.7;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre;
+    margin: 0;
+}
+
+/* ── Not found ─────────────────────────────── */
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 20px;
+    color: var(--color-text);
+    font-size: 22px;
+}
+
+/* ── Responsive ────────────────────────────── */
+@media screen and (max-width: 830px) {
+    .hero {
+        height: 320px;
+    }
+
+    .wrapper {
+        padding: 0 10% 80px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .blockHeading {
+        font-size: 20px;
+        margin-top: 36px;
+    }
+
+    .blockParagraph {
+        font-size: 16px;
+    }
+
+    .blockQuote {
+        font-size: 16px;
+        padding: 14px 18px;
+    }
+
+    .blockCode {
+        font-size: 12px;
+        padding: 16px;
+    }
+
+    .backLink {
+        font-size: 14px;
+    }
+}

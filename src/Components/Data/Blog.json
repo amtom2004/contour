@@ -1,0 +1,29 @@
+[
+  {
+    "id": "kueue-yunikorn-kubernetes-scheduling",
+    "title": "Kueue vs YuniKorn: Smarter Scheduling for Efficient Kubernetes Deployments",
+    "imageSrc": "blogs/kueue.png",
+    "date": "June 2026",
+    "readTime": "7 min read",
+    "description": "The default Kubernetes scheduler places pods, but it doesn't queue, reserve, or fairly share capacity across tenants. Here's how Kueue and Apache YuniKorn fill that gap — and when to reach for each.",
+    "tags": ["Kubernetes", "Scheduling", "Multi-tenancy"],
+    "source": "#",
+    "content": [
+      { "type": "paragraph", "text": "The default Kubernetes scheduler answers exactly one question: which node has room for this pod right now? That's enough for stateless web services, but it falls apart the moment you run batch jobs, share a cluster across teams, or need to guarantee each tenant a slice of capacity. The scheduler has no concept of a queue, a quota, or fairness — a pod either fits and runs, or it sits Pending. Two projects exist to add that missing layer: Kueue and Apache YuniKorn." },
+      { "type": "heading", "text": "The Gap: Creation vs Scheduling" },
+      { "type": "paragraph", "text": "A pod passes through two distinct gates. At creation, admission controllers like ResourceQuota decide whether it may exist at all — an over-quota pod is rejected outright with an error. At scheduling, the scheduler decides which node runs it. The problem is that a namespace ResourceQuota rejects work at creation, which is a poor experience for batch workloads: a tenant submitting ten jobs gets errors on the ones that don't fit, instead of having them wait their turn. What you usually want is a queue, not a rejection." },
+      { "type": "quote", "text": "A ResourceQuota caps what you may use. It does not reserve capacity for you, and it does not queue what doesn't fit — it simply says no." },
+      { "type": "heading", "text": "Kueue: Job Queueing on Top of Kubernetes" },
+      { "type": "paragraph", "text": "Kueue adds a queueing layer above the scheduler. Instead of letting a Job create its pods immediately, Kueue suspends it, creates a Workload object describing its resource ask, and admits it only when its ClusterQueue has room. Work that doesn't fit waits in line rather than failing. It's designed around batch and ML workloads — Jobs, JobSets, RayJobs — and integrates cleanly with the existing scheduler." },
+      { "type": "code", "language": "yaml", "text": "apiVersion: kueue.x-k8s.io/v1beta1\nkind: ClusterQueue\nmetadata:\n  name: team-a-queue\nspec:\n  namespaceSelector:\n    matchLabels:\n      team: a\n  resourceGroups:\n    - coveredResources: [\"cpu\", \"memory\"]\n      flavors:\n        - name: default-flavor\n          resources:\n            - name: cpu\n              nominalQuota: \"10\"\n            - name: memory\n              nominalQuota: \"20Gi\"" },
+      { "type": "paragraph", "text": "The catch: Kueue only manages workloads it can see and that carry the right queue label. Bare pods, Deployments, and anything unlabeled slip past it unless you enable pod-level integration and ensure every pod is labeled. In layered setups — like virtual clusters that strip labels during sync — that labeling requirement becomes the hard part." },
+      { "type": "heading", "text": "YuniKorn: A Scheduler That Understands Tenants" },
+      { "type": "paragraph", "text": "Apache YuniKorn takes a different approach — it replaces the scheduler entirely. Every pod in the cluster is placed through a hierarchy of queues, each with a guaranteed floor and a maximum ceiling. Because YuniKorn schedules everything, nothing escapes its accounting — including ad-hoc host pods that a namespace quota would never catch. Over-limit work is queued and scheduled automatically when capacity frees, never rejected." },
+      { "type": "code", "language": "yaml", "text": "queues:\n  - name: root\n    queues:\n      - name: team-a\n        resources:\n          guaranteed: {vcore: 10, memory: 20G}\n          max:        {vcore: 10, memory: 20G}\n      - name: team-b\n        resources:\n          guaranteed: {vcore: 10, memory: 20G}\n          max:        {vcore: 10, memory: 20G}" },
+      { "type": "paragraph", "text": "Setting guaranteed equal to max boxes each tenant into a fixed slice — no bursting, but no cross-tenant disruption either. Allow guaranteed to be lower than max and tenants can borrow idle capacity, which YuniKorn reclaims via preemption when the owner returns. YuniKorn can also map pods to queues by namespace rather than by label, which neatly sidesteps the label-stripping problem that complicates Kueue in nested-cluster setups." },
+      { "type": "heading", "text": "Which One, and When" },
+      { "type": "paragraph", "text": "Reach for Kueue when you want job queueing on a standard cluster without changing the scheduler, and your workloads are Job-shaped and labeled. Reach for YuniKorn when you need true multi-tenant guarantees that cover every pod, fair sharing with optional bursting, or gang scheduling for distributed jobs. Both share one non-negotiable discipline: the sum of all guarantees must stay within real capacity. A reservation is only real if you never promise more than the cluster can deliver." },
+      { "type": "paragraph", "text": "Get that invariant right, and the scheduler stops being a source of surprises. Tenants get predictable slices, batch work waits politely instead of failing, and the cluster fills up efficiently — which is exactly the kind of boring, dependable infrastructure good platforms are built on." }
+    ]
+  }
+]

@@ -1,10 +1,13 @@
 import React, {useState} from 'react'
+import { useLocation } from 'react-router-dom'
 import styles from "./Navbar.module.css"
 import { getImageUrl } from "../../utils"
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-  return <nav className={styles.navbar}> 
+    const { pathname } = useLocation();
+    const isBlog = pathname.startsWith('/blog/');
+  return <nav className={`${styles.navbar} ${isBlog ? styles.navbarBlog : ''}`}> 
     <a className={styles.title} href='/'>Aron Mathew Tom</a>
     <div className={styles.menu}>
         <img className={styles.menuBtn} 
@@ -30,6 +33,9 @@ export const Navbar = () => {
             </li>
             <li>
                 <a href='#publication'>Publications</a>
+            </li>
+            <li>
+                <a href='/#blogs'>Blog</a>
             </li>
             <li>
                 <a href='#contact'>Contact</a>

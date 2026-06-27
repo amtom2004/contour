@@ -10,6 +10,17 @@
     margin: 0 10%;
 }
 
+.navbarBlog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 61px 10% 0;
+    z-index: 100;
+    background: linear-gradient(180deg, rgba(4, 21, 45, 0.88) 0%, transparent 100%);
+}
+
 .title {
     font-size: 30px;
     font-weight: 600;
@@ -42,6 +53,10 @@
     .navbar {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .navbarBlog .menu {
+        margin-right: calc(10% + 30px);
     }
 
     .title {
